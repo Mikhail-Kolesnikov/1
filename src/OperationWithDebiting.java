@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class OperationWithDebiting {
 
@@ -17,13 +18,13 @@ public class OperationWithDebiting {
 
     public double calculateDebit() {
         if (type == Debiting.PROFITABLE_DEBIT) {
-            return 5.9;
+            return 1.49;
         }
         if (type == Debiting.SAVINGS_DEBIT) {
-            return 6.5;
+            return 2.15;
         }
         if (type == Debiting.DEBIT_FOR_EVERYONE) {
-            return 7.1;
+            return 1.11;
         }
         return BASE_DEBIT_RATE;
     }
