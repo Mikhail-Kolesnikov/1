@@ -1,5 +1,4 @@
 import java.util.Objects;
-import java.util.Scanner;
 
 public class OperationWithDebiting {
 
@@ -10,7 +9,7 @@ public class OperationWithDebiting {
 
     private static final double BASE_DEBIT_RATE = 1.0;
 
-    public OperationWithDebiting(double amount, Debiting type) {
+    public OperationWithDebiting(Debiting type,int amount) {
         this.amount = amount;
         this.type = type;
 
@@ -18,7 +17,7 @@ public class OperationWithDebiting {
 
     public double calculateDebit() {
         if (type == Debiting.PROFITABLE_DEBIT) {
-            return 1.49;
+            return 1.65;
         }
         if (type == Debiting.SAVINGS_DEBIT) {
             return 2.15;
