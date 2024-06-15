@@ -9,6 +9,7 @@ public class DebitCalculate {
 
         }
         return amount;
+        System.out.println();
     }
 
 
